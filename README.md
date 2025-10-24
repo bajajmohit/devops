@@ -36,3 +36,14 @@ Collection of Kubernetes deployment and security examples.
 - **Liveness & Readiness Probes**
 
 Each folder contains practical manifests to test secure and resilient deployments.
+
+# 🤖 Python Automation Scripts
+
+A set of lightweight automation tools for cloud governance and DevOps tasks.
+
+### Scripts
+- `azure-role-cleanup.py` → Detects orphaned Azure role assignments
+- `job-scraper-devops.py` → Fetches DevOps jobs from job portals
+- `cost-anomaly-alert.py` → Monitors Azure cost anomaly alerts
+
+All scripts are self-contained and use Python standard libraries + REST APIs.
