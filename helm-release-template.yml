@@ -1,0 +1,23 @@
+name: Helm Release Deployment
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Helm
+        uses: azure/setup-helm@v4
+
+      - name: Deploy to AKS
+        run: |
+          helm upgrade --install demo-api ./helm \
+            --namespace demo \
+            --set image.repository=ghcr.io/bajajmohit/demo-api \
+            --set image.tag=latest
