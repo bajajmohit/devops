@@ -25,3 +25,14 @@ A collection of reusable workflows to improve DevOps automation.
 - **Helm Deployment** – Deploy microservices to AKS or EKS.
 
 Use `workflow_call` to import these templates into your own pipelines.
+
+# 🐳 Kubernetes Examples
+
+Collection of Kubernetes deployment and security examples.
+
+### 📦 Includes
+- **Blue-Green Deployments** – Controlled rollout using Helm
+- **Pod SecurityContext** – Enforcing least privilege containers
+- **Liveness & Readiness Probes**
+
+Each folder contains practical manifests to test secure and resilient deployments.

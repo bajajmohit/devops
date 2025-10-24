@@ -1,0 +1,12 @@
+replicaCount: 2
+
+image:
+  repository: ghcr.io/bajajmohit/demo-app
+  tag: blue
+  pullPolicy: Always
+
+service:
+  type: ClusterIP
+  port: 8080
+
+deploymentStrategy: BlueGreen
